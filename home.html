@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="product.css">
+
+    <script src="product.js" defer></script>
+
+    <title>La Moda Website</title>
+    
+  </head>
+
+
+
+
+  <body >
+    <!------------------------- Header --------------------->
+    <header class="header" id="header">
+      <!----------  Navbar ----------->
+      <div class="top-nav">
+        <div class="container d-flex">
+          <p>You can Order Online Or Call Us: (001) 2222-55555</p>
+          <ul class="d-flex">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="nav-center container d-flex">
+          <div class="logo"><h1>La Moda</h1></div>
+
+          <ul class="nav-list d-flex">
+            <li class="nav-item">
+              <a href="home.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="product.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="contactUs.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="Register.html" class="nav-link">Register</a>
+            </li>
+            <li class="nav-item">
+                <a href="login.html" class="nav-link">Log in</a>
+            </li>
+          </ul>
+
+          <div class="icons d-flex">
+            <div class="icon">
+              <i class="bx bx-user"></i>
+            </div>
+            <div class="icon">
+              <i class="bx bx-search"></i>
+            </div>
+            <div class="icon">
+              <i class="bx bx-cart"></i>
+              <span class="d-flex">0</span>
+            </div>
+          </div>
+
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-left"></i>
+          </div>
+        </div>
+      </div>
+      <!---------- End of Navbar ----------->
+
+
+      <!------Slider Part as part of Header----->
+      <div class="slider d-flex">
+        <div class="left">
+
+          <h1>Shop our Products</h1>
+          <p>
+            This our New Project in .net Track in iTi Minya, We hope you will like it :)
+          </p>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="right">
+          <div class="img-box">
+            <img src="./images/slider.png" alt="hero image" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-----------------End of Header Section ---------------->
+
+
+
+    <!-- Categories Section -->
+    <section class="section category">
+        <div class="cat-center">
+          <div class="cat">
+            <img src="./images/WomenCategory.jpg" alt="women category" />
+            <div>
+              <p onclick="hide('men'); show('women');">WOMEN'S WEAR</p>
+            </div>
+
+          </div>
+          <div class="cat">
+            <img src="./images/MenCategory.jpg" alt="men category" />
+            <div>
+              <p onclick="hide('women'); show('men');">MEN'S WEAR</p>
+            </div>
+          </div>
+        </div>
+      </section>
+                <!----------- All Products to filter ----------->
+                <section class="section all-products" id="products">
+                    <div id = "women">
+                        <div class="top container">
+                            <h1> Women's Wear </h1>
+                        </div>
+                        <div class="product-center container" id="w">
+                        </div>
+                    </div> 
+
+                    <div id="men">
+                        <div class="top container">
+                            <h1> Men's Wear </h1>
+                        </div>
+                        <div class="product-center container" id="m">
+                        </div>
+                    </div>
+                </section>
+
+
+
+    <!----------------- Promotion ------------------>
+
+    <section class="section banner">
+        <div class="left">
+          <span class="trend">Promotion Section</span>
+          <h1>Group Memebers</h1>
+          <p> Maha Mahmoud, Aya Mostafa, Islam Ahmed</p>
+          <a href="#" class="btn">Discover Now</a>
+        </div>
+        <div class="right">
+          <img src="./images/banner.png" alt="">
+        </div>
+    </section>
+        
+        
+
+
+
+          <!---------------------- Footer ----------------------->
+    <footer class="footer">
+        <div class="row">
+          <div class="col d-flex">
+            <h4>INFORMATION</h4>
+            <a href="">About us</a>
+            <a href="">Contact Us</a>
+
+          </div>
+          <div class="col d-flex">
+            <h4>USEFUL LINK</h4>
+            <a href="">Term & Conditions</a>
+            <a href="">Shipping Guide</a>
+          </div>
+          <div class="col d-flex">
+            <span><i class='bx bxl-facebook-square'></i></span>
+            <span><i class='bx bxl-instagram-alt' ></i></span>
+            <span><i class='bx bxl-twitter' ></i></span>
+            <span><i class='bx bxl-pinterest' ></i></span>
+          </div>
+        </div>
+      </footer>
+
+    <!-----------------End of Footer Section ---------------->
+
+    </body>
+    <script type="text/javascript">
+         //----------- Filtering Products -----------
+        function hide(id) {
+            document.getElementById(id).style.display = "none";
+        }
+        function show(id) {
+            document.getElementById(id).style.display = "block";
+        }
+        function showAll() {
+            document.getElementById('men').style.display = "block";
+            document.getElementById('women').style.display = "block";
+        }
+    </script>
+
+    <script>
+        const hamburer = document.querySelector('.hamburger')
+        const navList = document.querySelector('.nav-list')
+
+        hamburer.addEventListener('click', ()=>{
+        navList.classList.toggle('open')
+        })     
+    </script>
+
+    <!------------------------ GSAP link------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        // -------------------using GSAP--------------
+        gsap.from(".img-box img", { opacity: 0, duration: 1, delay: 1, x: -200 });
+        gsap.from(".left h1", { opacity: 0, duration: 1, delay: 1.5, y: -50 });
+        gsap.from(".left p", { opacity: 0, duration: 1, delay: 2, y: -45 });
+        gsap.from(".left a", { opacity: 0, duration: 1, delay: 2.5, y: 50 });   
+    </script>
+
+  </html>

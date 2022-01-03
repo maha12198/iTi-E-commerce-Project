@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="product-details.css" />
+
+    <title>product-details</title>
+    <script src="product-details.js" defer></script>
+    
+</head>
+
+
+<body>
+
+        <!----------  Navbar ----------->
+        <div class="top-nav">
+          <div class="container d-flex">
+            <p>You can Order Online Or Call Us: (001) 2222-55555</p>
+            <ul class="d-flex">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navigation">
+          <div class="nav-center container d-flex">
+            <div class="logo"><h1>La Moda</h1></div>
+  
+            <ul class="nav-list d-flex">
+              <li class="nav-item">
+                <a href="home.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="product.html" class="nav-link">Products</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="contactUs.html" class="nav-link">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                  <a href="Register.html" class="nav-link">Register</a>
+              </li>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">Log in</a>
+            </li>
+            </ul>
+  
+            <div class="icons d-flex">
+              <div class="icon">
+                <i class="bx bx-user"></i>
+              </div>
+              <div class="icon">
+                <i class="bx bx-search"></i>
+              </div>
+              <div class="icon">
+                <i class="bx bx-cart"></i>
+                <span class="d-flex">0</span>
+              </div>
+            </div>
+  
+            <div class="hamburger">
+              <i class="bx bx-menu-alt-left"></i>
+            </div>
+          </div>
+        </div>
+        <!---------- End of Navbar ----------->
+  
+  
+     <!--------------------- Product Details -------------------->
+  <section class="section product-detail">
+    <div class="details container-md">
+      <div class="left">
+        <div class="main" >
+          <img src="" alt="" id="img">
+        </div>
+       
+      </div>
+      <div class="right">
+        <span> </span>
+        <h1 id="nm"></h1>
+        <div class="price" id="p"></div>
+        <form>
+          <div>
+            <select>
+              <option value="Select Size" selected disabled>Select Size</option>
+              <option value="1">12</option>
+              <option value="2">14</option>
+              <option value="3">16</option>
+              <option value="4">18</option>
+            </select>
+          </div>
+        </form>
+
+
+        <form class="form">
+          <input type="text" placeholder="1">
+          <a href="cart.html" class="addCart">Add To Cart</a>
+        </form>
+        <h3>Product Details</h3>
+        <p id="d">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero minima delectus nulla voluptates nesciunt
+          quidem laudantium, quisquam voluptas facilis dicta in explicabo, laboriosam ipsam suscipit!</p>
+      </div>
+    </div>
+  </section>
+    
+
+
+   <!------------------------ Related Products ------------------------->
+   <section class="section featured">
+    <div class="top container">
+      <h1>Related Products</h1>
+    </div>
+
+    <div class="product-center container">
+      <div class="product">
+        <div class="product-header">
+          <img src="" alt="" id="0" onclick=" getDetails(event) ">
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <h3 id="nm1"></h3>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <h4 class="price" id="pr1"></h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img src="" alt="" id="1" onclick=" getDetails(event) ">
+
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+         <h3 id="nm2"></h3>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <h4 class="price"  id="pr2"></h4>
+        </div>
+      </div>
+     
+     
+     
+      <div class="product">
+        <div class="product-header">
+          <img src="" alt="" id="2" onclick=" getDetails(event) ">
+
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+        <h3 id="nm3"></h3>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <h4 class="price"  id="pr3"></h4>
+        </div>
+      </div>
+     
+      
+
+      <div class="product">
+        <div class="product-header">
+          <img src=" " alt="" id="3" onclick=" getDetails(event) ">
+
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+      <h3 id="nm4"></h3>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <h4 class="price"  id="pr4"> </h4>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-header">
+          <img src=" " alt="" id="4" onclick=" getDetails(event) " >
+
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+        <h3 id="nm5"></h3>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <h4 class="price"  id="pr5"> </h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img src=" " alt="" id="5" onclick=" getDetails(event) ">
+
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <h3 id="nm6"></h3>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <h4 class="price"  id="pr6"> </h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img src=" " alt="" id="6" onclick=" getDetails(event) ">
+
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+         <h3 id="nm7"></h3>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <h4 class="price"  id="pr7"> </h4>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-header">
+          <img src=" " alt="" id="7" onclick=" getDetails(event) ">
+
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <h3 id="nm8"></h3>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <h4 class="price"  id="pr8"> </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+          <!---------------------- Footer ----------------------->
+          <footer class="footer">
+            <div class="row">
+              <div class="col d-flex">
+                <h4>INFORMATION</h4>
+                <a href="">About us</a>
+                <a href="">Contact Us</a>
+    
+              </div>
+              <div class="col d-flex">
+                <h4>USEFUL LINK</h4>
+                <a href="">Term & Conditions</a>
+                <a href="">Shipping Guide</a>
+              </div>
+              <div class="col d-flex">
+                <span><i class='bx bxl-facebook-square'></i></span>
+                <span><i class='bx bxl-instagram-alt' ></i></span>
+                <span><i class='bx bxl-twitter' ></i></span>
+                <span><i class='bx bxl-pinterest' ></i></span>
+              </div>
+            </div>
+          </footer>
+    
+        <!-----------------End of Footer Section ---------------->
+
+
+
+
+
+</body>
+</html>
